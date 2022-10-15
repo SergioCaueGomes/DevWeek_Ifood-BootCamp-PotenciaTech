@@ -3,7 +3,7 @@ Este repositório contem os códigos que foram criados no IFood Devweek e os cod
 
 * Instrutora: Camila Cavalcante(dio.me).
 
-# Criamos o projeto Gradle Project via Spring Initializr, onde fizemos as configurações iniciais e adicionamos as dependencias:
+* Criamos o projeto Gradle Project via Spring Initializr, onde fizemos as configurações iniciais e adicionamos as dependencias:
 - Spring Web;
 - Spring data JPA;
 - H2 Database SQL;
