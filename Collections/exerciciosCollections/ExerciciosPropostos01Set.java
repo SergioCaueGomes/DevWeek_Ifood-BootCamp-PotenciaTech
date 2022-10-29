@@ -41,7 +41,7 @@ Crie um conjunto contendo as cores do arco-iris e:
         System.out.println("");
 
         System.out.println("Exiba as cores em ordem alfabética: ");
-
+        ArcoIris 
         
 
 
