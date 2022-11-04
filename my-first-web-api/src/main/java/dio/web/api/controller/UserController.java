@@ -24,11 +24,8 @@ public class UserController {
     public static void delete(@PathVariable("id") Integer id) {
         UserRepository.deleteById(id);
     }
-
     @PostMapping()
-    public void post(@RequestBody User user) {
-        userRepository.save(user);
-    }
+    public void post(@RequestBody User user) {userRepository.save(user);}
     @PutMapping()
     public void put(@RequestBody User user) {
         userRepository.save(user);

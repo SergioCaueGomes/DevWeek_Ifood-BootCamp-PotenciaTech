@@ -18,7 +18,6 @@ import java.util.HashSet;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-    @Bean
     private Contact contato() {
         return new Contact(
                 "Seu nome",
@@ -44,13 +43,13 @@ public class SwaggerConfig {
         Docket docket = new Docket(DocumentationType.SWAGGER_2);
 
         docket
-            .select()
-            .apis(RequestHandlerSelectors.basePackage("dio.web.api.controller"))
-            .paths(PathSelectors.any())
-            .build()
-            .apiInfo(this.informacoesApi().build())
-            .consumes(new HashSet<String>(Arrays.asList("application/json")))
-            .produces(new HashSet<String>(Arrays.asList("application/json")));
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("dio.web.api.controller"))
+                .paths(PathSelectors.any())
+                .build()
+                .apiInfo(this.informacoesApi().build())
+                .consumes(new HashSet<String>(Arrays.asList("application/json")))
+                .produces(new HashSet<String>(Arrays.asList("application/json")));
 
         return docket;
     }
